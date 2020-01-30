@@ -32,7 +32,6 @@
         <section id="sportscontent">
             <main role="main">
 <article>
-This is where the main content will be placed.
     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
 
 
@@ -42,7 +41,6 @@ This is where the main content will be placed.
 </article>
 
 <article>
-    <h2> second place to put info on ech page</h2>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
 
