@@ -33,21 +33,31 @@
             <main role="main">
 <article>
 This is where the main content will be placed.
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
 
+
+    </asp:ContentPlaceHolder>
 
 
 </article>
 
 <article>
     <h2> second place to put info on ech page</h2>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
+
+    </asp:ContentPlaceHolder>
 
 </article>
  </main>
 <aside>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div><h4>Soccer Rules</h4>Here are the 2020 rules for select soccer.</div>
+    <div><h4>Player of the Week</h4>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <div><h4>Events</h4>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server"></asp:ContentPlaceHolder>
+    </div>
 </aside>
 </section>
           <footer>
