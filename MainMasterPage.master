@@ -5,14 +5,55 @@
 <html>
 <head runat="server">
     <title>Sports - Master</title>
+    <link href="css/sports.css" rel="stylesheet" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+<form id="form1" runat="server">
+      <div>
+        <header>
     <div id="logo">
-        <img src="images/soccerball.png" />
+        <img src="images/soccerball.png"/> Sports Center
+    <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Players</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Events</a></li>
+    </ul>
+    </nav>
     </div>
-    </form>
+      </header>
+        <section>
+            <strong>Welcome to my sports page!!</strong>
+        </section>
+        <section id="sportscontent">
+            <main role="main">
+<article>
+This is where the main content will be placed.
+
+
+
+</article>
+
+<article>
+    <h2> second place to put info on ech page</h2>
+
+
+</article>
+ </main>
+<aside>
+    <div></div>
+    <div></div>
+    <div></div>
+</aside>
+</section>
+          <footer>
+              <p>Copyright &copy; 2020 IS44880 Sports Center</p>
+          </footer>
+</div>
+</form>
 </body>
 </html>
