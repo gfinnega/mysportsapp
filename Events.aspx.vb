@@ -13,7 +13,7 @@ Partial Class Events
         VegetarianCheckBox.Checked = False
         AllergiesBox.Text = ""
 
-        CalculatedListBox.Text = ""
+        lstSummary.Text = ""
         NameBox.Focus()
 
         lblMessage.Text = ""
@@ -24,5 +24,24 @@ Partial Class Events
     End Sub
     Protected Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles AllergiesBox.TextChanged
 
+    End Sub
+    Protected Sub CalculateButton_Click(sender As Object, e As EventArgs) Handles CalculateButton.Click
+        lblMessage.Text = "Review your order before you submit."
+
+        Dim adultprice As Double = 10
+        Dim childprice As Double = 5
+
+        Dim adulttl As Double = AdultTickets.SelectedValue * adultprice
+        Dim childttl As Double = ChildTix.SelectedValue * childprice
+
+        Dim grandttl As Double = adulttl + childttl
+
+        'add to the list box 
+        lstSummary.Items.Add("Order Summary")
+        lstSummary.Items.Add("Name : " & NameBox.Text)
+        lstSummary.Items.Add("************************")
+        lstSummary.Items.Add("Number of Adult Tickets : " & AdultTickets.SelectedValue.ToString)
+        lstSummary.Items.Add("Number of Child Tickets : " & ChildTix.SelectedValue.ToString)
+        lstSummary.Items.Add("Total : " & grandttl.ToString("c"))
     End Sub
 End Class

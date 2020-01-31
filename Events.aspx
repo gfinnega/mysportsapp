@@ -101,14 +101,14 @@
         <tr>
             <td class="auto-style2">&nbsp;</td>
             <td>
-                <asp:Button ID="CalculateButton" runat="server" Text="Calculate" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <asp:Button ID="CalculateButton" runat="server" Text="Calculate Total" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                 <asp:Button ID="ClearButton" runat="server" Text="Clear" />
             </td>
         </tr>
         <tr>
             <td class="auto-style2">Summary:</td>
             <td>
-                <asp:ListBox ID="CalculatedListBox" runat="server" Width="362px"></asp:ListBox>
+                <asp:ListBox ID="lstSummary" runat="server" Height="241px" Width="345px"></asp:ListBox>
                 <br /><br /><br />
                 <asp:Button runat="server" Text="Submit Order" ID="SubmitOrderButton" />
                 <br />
