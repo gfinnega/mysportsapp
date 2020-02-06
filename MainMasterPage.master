@@ -17,11 +17,11 @@
         <img src="images/soccerball.png"/> Sports Center
     <nav>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Players</a></li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">Reports</a></li>
-        <li><a href="#">Events</a></li>
+        <li><a href="Default.aspx">Home</a></li>
+        <li><a href="players.aspx">Players</a></li>
+        <li><a href="Teams.aspx">Teams</a></li>
+        <li><a href="Reports.aspx">Reports</a></li>
+        <li><a href="Events.aspx">Events</a></li>
     </ul>
     </nav>
     </div>

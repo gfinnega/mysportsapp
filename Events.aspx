@@ -32,6 +32,7 @@
             <td class="auto-style3">Name:</td>
             <td class="auto-style4">
                 <asp:TextBox ID="NameBox" runat="server" Width="246px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="NameBox" ErrorMessage="An order must have a name." Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
