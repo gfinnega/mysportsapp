@@ -13,7 +13,7 @@ Partial Class Events
         VegetarianCheckBox.Checked = False
         AllergiesBox.Text = ""
 
-        lstSummary.Text = ""
+        lstSummary.Items.Clear()
         NameBox.Focus()
 
         lblMessage.Text = ""
@@ -43,5 +43,20 @@ Partial Class Events
         lstSummary.Items.Add("Number of Adult Tickets : " & AdultTickets.SelectedValue.ToString)
         lstSummary.Items.Add("Number of Child Tickets : " & ChildTix.SelectedValue.ToString)
         lstSummary.Items.Add("Total : " & grandttl.ToString("c"))
+
+        If AllergiesBox.Text <> "" Then
+            lstSummary.Items.Add("Has these allergies : " & AllergiesBox.Text)
+        End If
+        If VegetarianCheckBox.Checked = True Then
+            lstSummary.Items.Add("you will be given vegitarian meals")
+        End If
+
+        lstSummary.Items.Add("Comments : " & CommentBox.Text)
+        lstSummary.Items.Add("************************")
+
+
+    End Sub
+    Protected Sub SubmitOrderButton_Click(sender As Object, e As EventArgs) Handles SubmitOrderButton.Click
+        lblMessage.Text = "Thanks for your money, see ya at the there!"
     End Sub
 End Class
