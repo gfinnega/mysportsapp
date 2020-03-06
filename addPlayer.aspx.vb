@@ -5,10 +5,11 @@ Partial Class addPlayer
     Protected Sub AddButton1_Click(sender As Object, e As EventArgs) Handles AddButton1.Click
         cn.Open()
 
-        Dim cmd As New Data.SqlClient.SqlCommand(("insert into Players"(First_Name, Last_Name, City, State, Zip, Phone, Team)VALUES('"&First_Name.text & "','"&Last_Name.text & "','"&City.text & "','"State.text & "','"&Zip.text & "','"&Phone.text & "','"&Team.text & "')"),cn)
-            cmd.ExecuteNonQuery()
+        Dim cmd As New Data.SqlClient.SqlCommand(("INSERT INTO Players(First_Name, Last_Name, City, State, Zip, Phone, Team)VALUES('" & First_Name.Text & "','" & Last_Name.Text & "','" & City.Text & "','" & State.Text & "','" & Zip.Text & "','" & Phone.Text & "','" & Team.Text & "')"), cn)
+        cmd.ExecuteNonQuery()
         cn.Close()
-        lblmessage.Text = "nice"
+        lblmessage.Text = "Congratulations " & First_Name.Text & Last_Name.Text & " you have been entered as a player."
+
 
     End Sub
 End Class
